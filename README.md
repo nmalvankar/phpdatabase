@@ -2,7 +2,7 @@
 
 ### Deploy MySQL 8
 ```sh
-oc new-app mysql:8.0 MYSQL_USER=user MYSQL_PASSWORD=pass MYSQL_DATABASE=testdb -l db=mysql
+oc new-app mysql:8.0 MYSQL_USER=user MYSQL_PASSWORD=pass MYSQL_ROOT_PASSWORD=pass MYSQL_DATABASE=testdb -l db=mysql
 ```
 
 ### Deploy php application with environment variables for MySQL
